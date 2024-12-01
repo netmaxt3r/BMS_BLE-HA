@@ -13,6 +13,7 @@ from homeassistant.const import (  # noqa: F401
 BMS_TYPES: Final = [
     "cbtpwr_bms",
     "daly_bms",
+    "daly2_bms",
     "dpwrcore_bms",
     "ective_bms",
     "ej_bms",
