@@ -93,6 +93,11 @@
     {
       "local_name": "BP0?",
       "service_uuid": "0000ff00-0000-1000-8000-00805f9b34fb"      
+    },
+    {
+      "manufacturer_id": 770,
+      "service_uuid": "02f00000-0000-0000-0000-00000000fe00",
+      "connectable": true
     }    
   ],
   "codeowners": ["@patman15"],

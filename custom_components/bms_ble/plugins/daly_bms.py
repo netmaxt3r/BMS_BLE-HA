@@ -51,9 +51,14 @@ class BMS(BaseBMS):
         (ATTR_DELTA_VOLTAGE, 112 + HEAD_LEN, lambda x: float(x / 1000)),
     ]
 
-    def __init__(self, ble_device: BLEDevice, reconnect: bool = False) -> None:
+    def __init__(
+        self,
+        ble_device: BLEDevice,
+        reconnect: bool = False,
+        name: str = __name__
+    ) -> None:
         """Intialize private BMS members."""
-        super().__init__(__name__, ble_device, reconnect)
+        super().__init__(name, ble_device, reconnect)
 
     @staticmethod
     def matcher_dict_list() -> list[dict]:
