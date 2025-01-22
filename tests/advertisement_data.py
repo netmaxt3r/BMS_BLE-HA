@@ -232,4 +232,14 @@ ADVERTISEMENTS: Final[list] = [
         ),
         "jbd_bms",
     ),
+    (
+        generate_advertisement_data(
+            local_name="MGBAT-04",
+            manufacturer_data={770: b"\x16\x40\x18\x07"},
+            service_uuids=["02f00000-0000-0000-0000-00000000fe00"],
+            tx_power=-127,
+            rssi=-53,
+        ),
+        "daly2_bms",
+    ),
 ]
